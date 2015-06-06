@@ -2,8 +2,8 @@ package org.jointheleague.iaroc;
 
 import ioio.lib.api.IOIO;
 import ioio.lib.api.exception.ConnectionLostException;
-import org.wintrisstech.irobot.ioio.IRobotCreateAdapter;
-import org.wintrisstech.irobot.ioio.IRobotCreateInterface;
+import org.jointheleague.erik.irobot.IRobotCreateAdapter;
+import org.jointheleague.erik.irobot.IRobotCreateInterface;
 import org.jointheleague.iaroc.sensors.UltraSonicSensors;
 
 public class Brain extends IRobotCreateAdapter {

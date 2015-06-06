@@ -12,8 +12,8 @@ import ioio.lib.util.android.IOIOActivity;
 
 import java.util.Locale;
 
-import org.wintrisstech.irobot.ioio.IRobotCreateInterface;
-import org.wintrisstech.irobot.ioio.SimpleIRobotCreate;
+import org.jointheleague.erik.irobot.IRobotCreateInterface;
+import org.jointheleague.erik.irobot.SimpleIRobotCreate;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;

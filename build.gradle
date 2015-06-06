@@ -1,12 +1,17 @@
 buildscript {
     repositories {
         mavenCentral()
+        flatDir {
+                dirs 'lib' //this way we can find the .aar file in libs folder
+            }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:1.2.2'
     }
 }
 apply plugin: 'com.android.application'
+
+
 
 dependencies {
     compile fileTree(dir: 'lib', include: '*.jar')
