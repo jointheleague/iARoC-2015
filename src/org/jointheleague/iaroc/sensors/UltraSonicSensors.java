@@ -58,8 +58,8 @@ public class UltraSonicSensors
 	public void read() throws ConnectionLostException, InterruptedException
 	{
 		leftDistance = read(leftStrobe, LEFT_ULTRASONIC_INPUT_PIN);
-		frontDistance = read(frontStrobe, FRONT_ULTRASONIC_INPUT_PIN);
-		rightDistance = read(rightStrobe, RIGHT_ULTRASONIC_INPUT_PIN);
+//		frontDistance = read(frontStrobe, FRONT_ULTRASONIC_INPUT_PIN);
+//		rightDistance = read(rightStrobe, RIGHT_ULTRASONIC_INPUT_PIN);
 	}
 
 	private int read(DigitalOutput strobe, int inputPin) throws ConnectionLostException, InterruptedException
@@ -70,7 +70,7 @@ public class UltraSonicSensors
 		ioio.endBatch();
 		SystemClock.sleep(20);
 		strobe.write(false);
-		int distance = (int) (input.getDuration() * CONVERSION_FACTOR);
+		int distance = (int) (input.getDurationBuffered() * CONVERSION_FACTOR);
 		input.close();
 		return distance;
 	}
