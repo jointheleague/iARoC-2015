@@ -5,6 +5,7 @@ package org.jointheleague.iaroc;
  * version 150122A AndroidStudio version
  * version 150225B AndroidStudio version
  * version 160516A Works 4700-0003A with whiteBot...blinks light
+ * version 160605A WhiteBot works OK with 4700-0003A board
  **************************************************************************/
 import ioio.lib.api.IOIO;
 import ioio.lib.api.exception.ConnectionLostException;
